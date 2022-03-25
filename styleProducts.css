@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'SF Arborcrest Heavy', sans-serif;
+}
+
+
+/* Navbar */
+
+.topnav {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: #B75D69;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.sectionItens {
+    background-color: beige;
+    padding-top: 50px;
+}
+
+.containerProdutos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    margin-top: 30px;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.picItem img {
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+}
