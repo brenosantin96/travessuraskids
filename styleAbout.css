@@ -6,32 +6,98 @@
 }
 
 
-/* Navbar */
+/* font-family: 'SF Arborcrest Light', sans-serif;
+font-family: 'SF Arborcrest Medium', sans-serif; */
 
-.topnav {
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    background-color: #B75D69;
-    overflow: hidden;
-    display: flex;
-    justify-content: end;
+
+/* Background */
+
+@media (min-width: 750px) {
+    /* Navbar */
+    .topnav {
+        position: fixed;
+        width: 100%;
+        background-color: #B75D69;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        padding: 10px;
+        color: white;
+        font-size: 30px;
+    }
+    .linksNavBar {
+        display: flex;
+    }
+    .linksNavBar a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .topnav .logo {
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .topnav .icon {
+        display: none;
+    }
+    .linksNavBar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .containerAbout {
+        padding-top: 60px;
+    }
 }
 
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.containerAbout {
-    padding-top: 60px;
+@media (min-width: 280px) and (max-width: 749px) {
+    /* Navbar */
+    .topnav {
+        position: relative;
+        width: 100%;
+        background-color: #B75D69;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        padding: 10px;
+        color: white;
+        font-size: 30px;
+    }
+    .linksNavBar {
+        display: none;
+    }
+    .linksNavBar a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .topnav .logo {
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .topnav a i {
+        color: #4d2020;
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 19px;
+    }
+    .linksNavBar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .containerAbout {
+        padding-top: 60px;
+    }
 }
